@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	position: fixed !important;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+}
+nav>ul{
+	display: flex;
+	justify-content: flex-end;
+	flex: 100%;
+}
+ul a:hover{
+	color: #EFE42E !important;
+}
+
+nav img{
+	width: 50px;
+}
+
+#contenido{
+	width: 100%;
+	padding-top: 80px;
+	
+	/*background-color: #D6D6D6;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	position: absolute;*/
+}
+
+
+header{
+	padding: 1.5% 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background-image: url(../img/donosti-atardecer.jpg);
+	background-repeat: no-repeat;
+	background-size: 1300px 1000px; 
+}
+
+#inicio{
+	width: 50%;
+	top: 50px;
+	height: 570px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+#inicio>div>{
+	width: 400px;
+}
+#inicio>div>img{
+	width: 100%;
+}
+#inicio>h4{
+	margin: 15px 0 0 0;
+}
+header>.img{
+	width: 380px;
+
+}
+.img>img{
+	width: 100%;
+}
+
+#recorridos{
+	flex-wrap: wrap;
+	background-color: #61605C;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10% 0 10% 0;
+}
+#recorridos>a{
+	width: 350px;
+	border: none !important; 
+	box-shadow: #C3C2C2 1px 1px 10px;
+	text-decoration: none;
+	color: black;
+	border-radius: none;
+	margin: 2%;
+}
+.card{
+	border-radius: none !important; 
+	border: none !important;
+}
+.card>img{
+	width: 100%;
+	height: 100%;
+}
+.info{
+	display: none;
+	height: 100%;
+	position: absolute;
+	background-color: #FFC451;
+	opacity: .9;
+	padding: 2%;
+}
+#contacto{
+	background-color:#150940; 
+	padding: 10% 0 10% 0;
+}
+
+#contacto>h3{
+	text-align: center;
+	margin: 0 0 10% 0;
+}
+#contacto>form{
+	text-align: center;
+
+}
+form>.datos{
+	width: 30%;
+	padding: 10px 5px 10px 5px;
+}
+form>textarea{
+	width: 60%;
+	/*height: 35%;*/
+	margin-top: 10px;
+	padding: 10px 5px 10px 5px;
+}
+
+footer{
+	/*z-index: 2 !important;*/
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 5% 0 0;
+}
+footer>img{
+	width: 30px;
+}
+@media (max-width: 875px){
+	#inicio{
+		width: 100%;
+	}
+	header{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	header> .img{
+		width: 250px;
+	}
+	#inicio>div, h4{
+		margin: 0 20px 0 20px;
+	}
+}
+
+@media (max-width: 570px){
+	#contacto{
+		display: flex;
+		flex-direction: column;
+	}
+	#contacto>form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	form>.datos{
+		width: 95%;
+		margin: 10px 0 0 0;
+	}
+	form>textarea{
+		width: 95%;
+	}
+	#ofertas{
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+	}
+	header> .img{
+		display: none;
+	}
+}
