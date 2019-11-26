@@ -107,8 +107,9 @@
 		<span id="propiedad">Nerea Labandera &copy</span>
 		<div id="rrss">
 			<span>Encuentranos también en </span>
-			<a href="#"><img src="img/icons/icons8-facebook.svg"></a>
-			<a href="#"><img src="img/icons/icons8-instagram.svg"></a>
+			<a href="https://www.whatsapp.com/"><img src="img/icons/icons8-whatsapp.svg"></a>
+			<a href="https://www.facebook.com/"><img src="img/icons/icons8-facebook.svg"></a>
+			<a href="https://www.instagram.com/"><img src="img/icons/icons8-instagram.svg"></a>
 		</div>
 		
 	</footer>
