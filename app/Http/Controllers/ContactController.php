@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Contacto;
+use App\Contact;
 
-class ContactoController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,13 +36,13 @@ class ContactoController extends Controller
      */
     public function store(Request $request)
     {
-        $contacto= new Contacto();
+        $contact= new Contact();
 
-        $contacto->name=request('name');
-        $contacto->email=request('email');
-        $contacto->message=request('message');
+        $contact->name=request('name');
+        $contact->email=request('email');
+        $contact->message=request('message');
 
-        $contacto->save();
+        $contact->save();
         return redirect('/');
     }
 

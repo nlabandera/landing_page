@@ -35,7 +35,7 @@
 		</ul>
 	</nav>
 
-<!--COntenido de la web-->
+	<!--COntenido de la web-->
 	<div id="contenido" class="">
 		<!--Inicio y presentacion de la web-->
 		<header>
@@ -66,7 +66,7 @@
 				<div class="card">
 					<img src="img/gros.jpg">
 					<div class="info">
-						<h4>El barrio de moda</h4>
+						<h4>El barrio del surf</h4>
 						<p>Excepteur sint occaecat upidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			
 					</div>
 				</div>
@@ -80,16 +80,17 @@
 					</div>
 				</div>
 			</a>
-		
-		<!--Formulario de contacto-->	
+
+			<!--Formulario de contacto-->	
 		</div>
 		<div id="contacto" class="bg-dark text-white">
 			<h3>Envianos tu consulta y estaremos encantados de responderte</h3>
 			<form method="POST" action="{{route('/')}}">
-				<input class="datos" type="text" name="nombre" placeholder="Nombre y apellido" pattern="/^[a-zñáéíóú]{1,25}[\s]*)+$/" value="{{old('nombre')}}">
-				<input class="datos" type="text" name="email" value="E-mail" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="{{old('email')}}">
+				@csrf
+				<input id="name" class="datos" type="text" name="name" placeholder="Nombre y apellido" value="{{old('nombre')}}">
+				<input id="email" class="datos" type="text" name="email" value="E-mail" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="{{old('email')}}">
 				<br>
-				<textarea class="mensaje" placeholder="Hola, me gustaria saber..."></textarea>
+				<textarea id="message" class="mensaje" placeholder="Hola, me gustaria saber..." name="message"></textarea>
 				<br>
 				<div id="ofertas">
 					<input type="checkbox" name="">
@@ -103,9 +104,13 @@
 		</div>		
 	</div>
 	<footer class="bg-dark">
-		<span>Nerea Labandera &copy</span>
-		<img src="img/icons/icons8-facebook.svg">
-		<img src="img/icons/icons8-instagram.svg">
+		<span id="propiedad">Nerea Labandera &copy</span>
+		<div id="rrss">
+			<span>Encuentranos también en </span>
+			<a href="#"><img src="img/icons/icons8-facebook.svg"></a>
+			<a href="#"><img src="img/icons/icons8-instagram.svg"></a>
+		</div>
+		
 	</footer>
 
 

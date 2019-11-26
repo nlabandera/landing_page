@@ -81,11 +81,14 @@ header>.img{
 #recorridos>a{
 	width: 350px;
 	border: none !important; 
-	box-shadow: #C3C2C2 1px 1px 10px;
+	box-shadow: none;
 	text-decoration: none;
 	color: black;
 	border-radius: none;
 	margin: 2%;
+}
+#recorridos>a:hover{
+	box-shadow: #C3C2C2 1px 1px 10px;
 }
 .card{
 	border-radius: none !important; 
@@ -99,9 +102,14 @@ header>.img{
 	display: none;
 	height: 100%;
 	position: absolute;
-	background-color: #FFC451;
+	background-color: #e65c00;
 	opacity: .9;
 	padding: 2%;
+}
+.info>h4,p{
+	text-align: center;
+	color: white;
+	margin-top: 5%;
 }
 #contacto{
 	background-color:#150940; 
@@ -130,12 +138,21 @@ form>textarea{
 footer{
 	/*z-index: 2 !important;*/
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column-reverse;
+	align-items: center;
 	padding: 0 5% 0 0;
+	color: white !important;
+
 }
-footer>img{
+
+
+#rrss>a{
+	width: 100%;
+}
+#rrss img{
 	width: 30px;
 }
+
 @media (max-width: 875px){
 	#inicio{
 		width: 100%;
