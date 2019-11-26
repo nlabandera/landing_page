@@ -124,6 +124,10 @@ header>.img{
 	text-align: center;
 
 }
+#ofertas>label{
+	margin-top: 10px;
+	margin-left: 5px;
+}
 form>.datos{
 	width: 30%;
 	padding: 10px 5px 10px 5px;

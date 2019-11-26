@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Contact;
 
+use App\Http\Requests\ContactRequest;
+
 class ContactController extends Controller
 {
     /**
@@ -34,7 +36,7 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactRequest $request)
     {
         $contact= new Contact();
 
