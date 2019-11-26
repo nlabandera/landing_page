@@ -13,4 +13,6 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('/');
+
+Route::resource('/', 'ContactoController')->only('store');
